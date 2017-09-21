@@ -38,8 +38,6 @@ class XYBackgroundService: NSObject ,URLSessionDelegate,URLSessionTaskDelegate,U
     var uploadFilePathArr:[String] = Array()
     //当前上传文件的下标
     var currentUploadIndex:Int = 0
-    //已上传的文件信息
-    var uploadFileModel = XYUploadResultModel()
     
     
     
@@ -121,6 +119,11 @@ class XYBackgroundService: NSObject ,URLSessionDelegate,URLSessionTaskDelegate,U
     func uploadFile(filePath:String) {
         
         let url = uploadFileUrl
+        
+        if URL(string: url ) == nil {
+            print("上传地址无效")
+            return
+        }
         
         //设置请求头
         var request = URLRequest(url: URL(string: url )!)
@@ -223,12 +226,7 @@ class XYBackgroundService: NSObject ,URLSessionDelegate,URLSessionTaskDelegate,U
                 
                 uploadResultJson = JSON(data: resultData)
                 print("上传单个成功--->\(uploadResultJson!)")
-                //保存上传后得到的地址
-                if currentUploadIndex == 0{
-                    uploadFileModel.voiceFileUrl = XYUploadResultModel.praseUploadResult(jsonData:uploadResultJson)
-                }else if currentUploadIndex == 1{
-                    uploadFileModel.scriptFileUrl = XYUploadResultModel.praseUploadResult(jsonData:uploadResultJson)
-                }
+
                 //清空之前后台返回的数据
                 self.responseData = nil
                 //让index+1,以执行下一次上传

@@ -16,7 +16,6 @@
 		4177EFBB1F7143DD006AF9F2 /* XYBackgroundUploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFBA1F7143DD006AF9F2 /* XYBackgroundUploadTests.swift */; };
 		4177EFC61F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFC51F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift */; };
 		4177EFD71F714549006AF9F2 /* XYBackgroundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFD41F714549006AF9F2 /* XYBackgroundService.swift */; };
-		4177EFD81F714549006AF9F2 /* XYUploadResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFD51F714549006AF9F2 /* XYUploadResultModel.swift */; };
 		4177EFD91F714549006AF9F2 /* XYUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFD61F714549006AF9F2 /* XYUploadModel.swift */; };
 		4177EFDB1F714604006AF9F2 /* XYUploadFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFDA1F714604006AF9F2 /* XYUploadFileTableViewCell.swift */; };
 		4177EFDD1F7149FD006AF9F2 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4177EFDC1F7149FD006AF9F2 /* test.JPG */; };
@@ -57,7 +56,6 @@
 		4177EFC51F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBackgroundUploadUITests.swift; sourceTree = "<group>"; };
 		4177EFC71F7143DE006AF9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4177EFD41F714549006AF9F2 /* XYBackgroundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYBackgroundService.swift; sourceTree = "<group>"; };
-		4177EFD51F714549006AF9F2 /* XYUploadResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYUploadResultModel.swift; sourceTree = "<group>"; };
 		4177EFD61F714549006AF9F2 /* XYUploadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYUploadModel.swift; sourceTree = "<group>"; };
 		4177EFDA1F714604006AF9F2 /* XYUploadFileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYUploadFileTableViewCell.swift; sourceTree = "<group>"; };
 		4177EFDC1F7149FD006AF9F2 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				4177EFD41F714549006AF9F2 /* XYBackgroundService.swift */,
-				4177EFD51F714549006AF9F2 /* XYUploadResultModel.swift */,
 				4177EFD61F714549006AF9F2 /* XYUploadModel.swift */,
 			);
 			path = uploadFileBackground;
@@ -368,7 +365,6 @@
 				4177EFA81F7143DD006AF9F2 /* ViewController.swift in Sources */,
 				4177EFDB1F714604006AF9F2 /* XYUploadFileTableViewCell.swift in Sources */,
 				4177EFA61F7143DD006AF9F2 /* AppDelegate.swift in Sources */,
-				4177EFD81F714549006AF9F2 /* XYUploadResultModel.swift in Sources */,
 				4177EFD91F714549006AF9F2 /* XYUploadModel.swift in Sources */,
 				4177EFD71F714549006AF9F2 /* XYBackgroundService.swift in Sources */,
 			);
