@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		414735C41F726DAA00ECC937 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414735C31F726DAA00ECC937 /* UserNotifications.framework */; };
+		4177EFA61F7143DD006AF9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFA51F7143DD006AF9F2 /* AppDelegate.swift */; };
+		4177EFA81F7143DD006AF9F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFA71F7143DD006AF9F2 /* ViewController.swift */; };
+		4177EFAB1F7143DD006AF9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4177EFA91F7143DD006AF9F2 /* Main.storyboard */; };
+		4177EFAD1F7143DD006AF9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4177EFAC1F7143DD006AF9F2 /* Assets.xcassets */; };
+		4177EFB01F7143DD006AF9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4177EFAE1F7143DD006AF9F2 /* LaunchScreen.storyboard */; };
+		4177EFBB1F7143DD006AF9F2 /* XYBackgroundUploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFBA1F7143DD006AF9F2 /* XYBackgroundUploadTests.swift */; };
+		4177EFC61F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFC51F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift */; };
+		4177EFD71F714549006AF9F2 /* XYBackgroundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFD41F714549006AF9F2 /* XYBackgroundService.swift */; };
+		4177EFD81F714549006AF9F2 /* XYUploadResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFD51F714549006AF9F2 /* XYUploadResultModel.swift */; };
+		4177EFD91F714549006AF9F2 /* XYUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFD61F714549006AF9F2 /* XYUploadModel.swift */; };
+		4177EFDB1F714604006AF9F2 /* XYUploadFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177EFDA1F714604006AF9F2 /* XYUploadFileTableViewCell.swift */; };
+		4177EFDD1F7149FD006AF9F2 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4177EFDC1F7149FD006AF9F2 /* test.JPG */; };
+		F292A3A4A881E175C98650CA /* Pods_XYBackgroundUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20B0641E6026EFDDDA5F069 /* Pods_XYBackgroundUpload.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4177EFB71F7143DD006AF9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4177EF9A1F7143DD006AF9F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4177EFA11F7143DD006AF9F2;
+			remoteInfo = XYBackgroundUpload;
+		};
+		4177EFC21F7143DE006AF9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4177EF9A1F7143DD006AF9F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4177EFA11F7143DD006AF9F2;
+			remoteInfo = XYBackgroundUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		246A85A62AD3E8E570C682F3 /* Pods-XYBackgroundUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYBackgroundUpload.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYBackgroundUpload/Pods-XYBackgroundUpload.release.xcconfig"; sourceTree = "<group>"; };
+		414735C31F726DAA00ECC937 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		4177EFA21F7143DD006AF9F2 /* XYBackgroundUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYBackgroundUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4177EFA51F7143DD006AF9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4177EFA71F7143DD006AF9F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4177EFAA1F7143DD006AF9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4177EFAC1F7143DD006AF9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4177EFAF1F7143DD006AF9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4177EFB11F7143DD006AF9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4177EFB61F7143DD006AF9F2 /* XYBackgroundUploadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYBackgroundUploadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4177EFBA1F7143DD006AF9F2 /* XYBackgroundUploadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBackgroundUploadTests.swift; sourceTree = "<group>"; };
+		4177EFBC1F7143DE006AF9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4177EFC11F7143DE006AF9F2 /* XYBackgroundUploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYBackgroundUploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4177EFC51F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBackgroundUploadUITests.swift; sourceTree = "<group>"; };
+		4177EFC71F7143DE006AF9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4177EFD41F714549006AF9F2 /* XYBackgroundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYBackgroundService.swift; sourceTree = "<group>"; };
+		4177EFD51F714549006AF9F2 /* XYUploadResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYUploadResultModel.swift; sourceTree = "<group>"; };
+		4177EFD61F714549006AF9F2 /* XYUploadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYUploadModel.swift; sourceTree = "<group>"; };
+		4177EFDA1F714604006AF9F2 /* XYUploadFileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYUploadFileTableViewCell.swift; sourceTree = "<group>"; };
+		4177EFDC1F7149FD006AF9F2 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
+		AA3D533C9E5AB1D5F39379F1 /* Pods-XYBackgroundUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYBackgroundUpload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYBackgroundUpload/Pods-XYBackgroundUpload.debug.xcconfig"; sourceTree = "<group>"; };
+		D20B0641E6026EFDDDA5F069 /* Pods_XYBackgroundUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYBackgroundUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4177EF9F1F7143DD006AF9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414735C41F726DAA00ECC937 /* UserNotifications.framework in Frameworks */,
+				F292A3A4A881E175C98650CA /* Pods_XYBackgroundUpload.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4177EFB31F7143DD006AF9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4177EFBE1F7143DE006AF9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F410D6CFD27CF16B2CCB76F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA3D533C9E5AB1D5F39379F1 /* Pods-XYBackgroundUpload.debug.xcconfig */,
+				246A85A62AD3E8E570C682F3 /* Pods-XYBackgroundUpload.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4177EF991F7143DD006AF9F2 = {
+			isa = PBXGroup;
+			children = (
+				4177EFA41F7143DD006AF9F2 /* XYBackgroundUpload */,
+				4177EFB91F7143DD006AF9F2 /* XYBackgroundUploadTests */,
+				4177EFC41F7143DE006AF9F2 /* XYBackgroundUploadUITests */,
+				4177EFA31F7143DD006AF9F2 /* Products */,
+				2F410D6CFD27CF16B2CCB76F /* Pods */,
+				B92FB7B49118D13BDAEED756 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4177EFA31F7143DD006AF9F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4177EFA21F7143DD006AF9F2 /* XYBackgroundUpload.app */,
+				4177EFB61F7143DD006AF9F2 /* XYBackgroundUploadTests.xctest */,
+				4177EFC11F7143DE006AF9F2 /* XYBackgroundUploadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4177EFA41F7143DD006AF9F2 /* XYBackgroundUpload */ = {
+			isa = PBXGroup;
+			children = (
+				4177EFD31F714549006AF9F2 /* uploadFileBackground */,
+				4177EFA51F7143DD006AF9F2 /* AppDelegate.swift */,
+				4177EFDA1F714604006AF9F2 /* XYUploadFileTableViewCell.swift */,
+				4177EFDC1F7149FD006AF9F2 /* test.JPG */,
+				4177EFA71F7143DD006AF9F2 /* ViewController.swift */,
+				4177EFA91F7143DD006AF9F2 /* Main.storyboard */,
+				4177EFAC1F7143DD006AF9F2 /* Assets.xcassets */,
+				4177EFAE1F7143DD006AF9F2 /* LaunchScreen.storyboard */,
+				4177EFB11F7143DD006AF9F2 /* Info.plist */,
+			);
+			path = XYBackgroundUpload;
+			sourceTree = "<group>";
+		};
+		4177EFB91F7143DD006AF9F2 /* XYBackgroundUploadTests */ = {
+			isa = PBXGroup;
+			children = (
+				4177EFBA1F7143DD006AF9F2 /* XYBackgroundUploadTests.swift */,
+				4177EFBC1F7143DE006AF9F2 /* Info.plist */,
+			);
+			path = XYBackgroundUploadTests;
+			sourceTree = "<group>";
+		};
+		4177EFC41F7143DE006AF9F2 /* XYBackgroundUploadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4177EFC51F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift */,
+				4177EFC71F7143DE006AF9F2 /* Info.plist */,
+			);
+			path = XYBackgroundUploadUITests;
+			sourceTree = "<group>";
+		};
+		4177EFD31F714549006AF9F2 /* uploadFileBackground */ = {
+			isa = PBXGroup;
+			children = (
+				4177EFD41F714549006AF9F2 /* XYBackgroundService.swift */,
+				4177EFD51F714549006AF9F2 /* XYUploadResultModel.swift */,
+				4177EFD61F714549006AF9F2 /* XYUploadModel.swift */,
+			);
+			path = uploadFileBackground;
+			sourceTree = "<group>";
+		};
+		B92FB7B49118D13BDAEED756 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				414735C31F726DAA00ECC937 /* UserNotifications.framework */,
+				D20B0641E6026EFDDDA5F069 /* Pods_XYBackgroundUpload.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4177EFA11F7143DD006AF9F2 /* XYBackgroundUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4177EFCA1F7143DE006AF9F2 /* Build configuration list for PBXNativeTarget "XYBackgroundUpload" */;
+			buildPhases = (
+				6F9E12117022EB611779ADB5 /* [CP] Check Pods Manifest.lock */,
+				4177EF9E1F7143DD006AF9F2 /* Sources */,
+				4177EF9F1F7143DD006AF9F2 /* Frameworks */,
+				4177EFA01F7143DD006AF9F2 /* Resources */,
+				BCEA36D521FB1D443C557C03 /* [CP] Embed Pods Frameworks */,
+				F24E67DFE1009145A70AC395 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYBackgroundUpload;
+			productName = XYBackgroundUpload;
+			productReference = 4177EFA21F7143DD006AF9F2 /* XYBackgroundUpload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4177EFB51F7143DD006AF9F2 /* XYBackgroundUploadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4177EFCD1F7143DE006AF9F2 /* Build configuration list for PBXNativeTarget "XYBackgroundUploadTests" */;
+			buildPhases = (
+				4177EFB21F7143DD006AF9F2 /* Sources */,
+				4177EFB31F7143DD006AF9F2 /* Frameworks */,
+				4177EFB41F7143DD006AF9F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4177EFB81F7143DD006AF9F2 /* PBXTargetDependency */,
+			);
+			name = XYBackgroundUploadTests;
+			productName = XYBackgroundUploadTests;
+			productReference = 4177EFB61F7143DD006AF9F2 /* XYBackgroundUploadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4177EFC01F7143DE006AF9F2 /* XYBackgroundUploadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4177EFD01F7143DE006AF9F2 /* Build configuration list for PBXNativeTarget "XYBackgroundUploadUITests" */;
+			buildPhases = (
+				4177EFBD1F7143DE006AF9F2 /* Sources */,
+				4177EFBE1F7143DE006AF9F2 /* Frameworks */,
+				4177EFBF1F7143DE006AF9F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4177EFC31F7143DE006AF9F2 /* PBXTargetDependency */,
+			);
+			name = XYBackgroundUploadUITests;
+			productName = XYBackgroundUploadUITests;
+			productReference = 4177EFC11F7143DE006AF9F2 /* XYBackgroundUploadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4177EF9A1F7143DD006AF9F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = xiaoyi;
+				TargetAttributes = {
+					4177EFA11F7143DD006AF9F2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HUV9FHB9EV;
+						ProvisioningStyle = Automatic;
+					};
+					4177EFB51F7143DD006AF9F2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HUV9FHB9EV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4177EFA11F7143DD006AF9F2;
+					};
+					4177EFC01F7143DE006AF9F2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HUV9FHB9EV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4177EFA11F7143DD006AF9F2;
+					};
+				};
+			};
+			buildConfigurationList = 4177EF9D1F7143DD006AF9F2 /* Build configuration list for PBXProject "XYBackgroundUpload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4177EF991F7143DD006AF9F2;
+			productRefGroup = 4177EFA31F7143DD006AF9F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4177EFA11F7143DD006AF9F2 /* XYBackgroundUpload */,
+				4177EFB51F7143DD006AF9F2 /* XYBackgroundUploadTests */,
+				4177EFC01F7143DE006AF9F2 /* XYBackgroundUploadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4177EFA01F7143DD006AF9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4177EFB01F7143DD006AF9F2 /* LaunchScreen.storyboard in Resources */,
+				4177EFAD1F7143DD006AF9F2 /* Assets.xcassets in Resources */,
+				4177EFAB1F7143DD006AF9F2 /* Main.storyboard in Resources */,
+				4177EFDD1F7149FD006AF9F2 /* test.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4177EFB41F7143DD006AF9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4177EFBF1F7143DE006AF9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F9E12117022EB611779ADB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCEA36D521FB1D443C557C03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYBackgroundUpload/Pods-XYBackgroundUpload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24E67DFE1009145A70AC395 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYBackgroundUpload/Pods-XYBackgroundUpload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4177EF9E1F7143DD006AF9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4177EFA81F7143DD006AF9F2 /* ViewController.swift in Sources */,
+				4177EFDB1F714604006AF9F2 /* XYUploadFileTableViewCell.swift in Sources */,
+				4177EFA61F7143DD006AF9F2 /* AppDelegate.swift in Sources */,
+				4177EFD81F714549006AF9F2 /* XYUploadResultModel.swift in Sources */,
+				4177EFD91F714549006AF9F2 /* XYUploadModel.swift in Sources */,
+				4177EFD71F714549006AF9F2 /* XYBackgroundService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4177EFB21F7143DD006AF9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4177EFBB1F7143DD006AF9F2 /* XYBackgroundUploadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4177EFBD1F7143DE006AF9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4177EFC61F7143DE006AF9F2 /* XYBackgroundUploadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4177EFB81F7143DD006AF9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4177EFA11F7143DD006AF9F2 /* XYBackgroundUpload */;
+			targetProxy = 4177EFB71F7143DD006AF9F2 /* PBXContainerItemProxy */;
+		};
+		4177EFC31F7143DE006AF9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4177EFA11F7143DD006AF9F2 /* XYBackgroundUpload */;
+			targetProxy = 4177EFC21F7143DE006AF9F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4177EFA91F7143DD006AF9F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4177EFAA1F7143DD006AF9F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4177EFAE1F7143DD006AF9F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4177EFAF1F7143DD006AF9F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4177EFC81F7143DE006AF9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4177EFC91F7143DE006AF9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4177EFCB1F7143DE006AF9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA3D533C9E5AB1D5F39379F1 /* Pods-XYBackgroundUpload.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HUV9FHB9EV;
+				INFOPLIST_FILE = XYBackgroundUpload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoyi.XYBackgroundUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4177EFCC1F7143DE006AF9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246A85A62AD3E8E570C682F3 /* Pods-XYBackgroundUpload.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HUV9FHB9EV;
+				INFOPLIST_FILE = XYBackgroundUpload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoyi.XYBackgroundUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4177EFCE1F7143DE006AF9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HUV9FHB9EV;
+				INFOPLIST_FILE = XYBackgroundUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoyi.XYBackgroundUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYBackgroundUpload.app/XYBackgroundUpload";
+			};
+			name = Debug;
+		};
+		4177EFCF1F7143DE006AF9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HUV9FHB9EV;
+				INFOPLIST_FILE = XYBackgroundUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoyi.XYBackgroundUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYBackgroundUpload.app/XYBackgroundUpload";
+			};
+			name = Release;
+		};
+		4177EFD11F7143DE006AF9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HUV9FHB9EV;
+				INFOPLIST_FILE = XYBackgroundUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoyi.XYBackgroundUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XYBackgroundUpload;
+			};
+			name = Debug;
+		};
+		4177EFD21F7143DE006AF9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HUV9FHB9EV;
+				INFOPLIST_FILE = XYBackgroundUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoyi.XYBackgroundUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XYBackgroundUpload;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4177EF9D1F7143DD006AF9F2 /* Build configuration list for PBXProject "XYBackgroundUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4177EFC81F7143DE006AF9F2 /* Debug */,
+				4177EFC91F7143DE006AF9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4177EFCA1F7143DE006AF9F2 /* Build configuration list for PBXNativeTarget "XYBackgroundUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4177EFCB1F7143DE006AF9F2 /* Debug */,
+				4177EFCC1F7143DE006AF9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4177EFCD1F7143DE006AF9F2 /* Build configuration list for PBXNativeTarget "XYBackgroundUploadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4177EFCE1F7143DE006AF9F2 /* Debug */,
+				4177EFCF1F7143DE006AF9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4177EFD01F7143DE006AF9F2 /* Build configuration list for PBXNativeTarget "XYBackgroundUploadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4177EFD11F7143DE006AF9F2 /* Debug */,
+				4177EFD21F7143DE006AF9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4177EF9A1F7143DD006AF9F2 /* Project object */;
+}
